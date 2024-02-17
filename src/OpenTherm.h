@@ -149,7 +149,7 @@ public:
     static bool isValidResponse(unsigned long response);
 
     // requests
-    static unsigned long buildSetBoilerStatusRequest(bool enableCentralHeating, bool enableHotWater = false, bool enableCooling = false, bool enableOutsideTemperatureCompensation = false, bool enableCentralHeating2 = false);
+    static unsigned long buildSetBoilerStatusRequest(bool enableCentralHeating, bool enableHotWater = false, bool enableCooling = false, bool enableOutsideTemperatureCompensation = false, bool enableCentralHeating2 = false, bool enableSummerMode = false, bool enableHotWaterBlocking = false);
     static unsigned long buildSetBoilerTemperatureRequest(float temperature);
     static unsigned long buildGetBoilerTemperatureRequest();
 
